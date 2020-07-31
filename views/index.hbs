@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="icon" type="image/png" href="http://icons.iconarchive.com/icons/iynque/ios7-style/1024/Weather-icon.png">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p class="text">Get your weather!!</p>
+        <form>
+            <input type="text" name="city" placeholder="Enter city name" />
+            <button class="waves-effect waves-light btn">Search</button>
+        </form>
+
+        <!-- Materialize preloader -->
+        <div id="toggleLoader">
+            <div class="indeterminate" style="width: 50%"></div>
+        </div>
+
+        <p id="error"></p>
+        <ul class="list">
+            <p class="collection-item" id="li1"></p>
+            <p class="collection-item" id="li2"></p>
+            <p class="collection-item" id="li3"></p>
+            <p class="collection-item" id="li4"></p>
+            <p class="collection-item" id="li5"></p>
+            <p class="collection-item" id="li6"></p>
+            <p class="collection-item" id="li7"></p>
+            <p class="collection-item" id="li8"></p>
+        </ul>
+    </div>
+    {{>footer}}
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
