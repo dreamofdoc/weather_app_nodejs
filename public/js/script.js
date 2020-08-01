@@ -11,7 +11,6 @@ let li_4 = document.querySelector("#li4");
 let li_5 = document.querySelector("#li5");
 let li_6 = document.querySelector("#li6");
 let li_7 = document.querySelector("#li7");
-let li_8 = document.querySelector("#li8");
 let loader = document.querySelector("#toggleLoader");
 let list = document.querySelector(".list");
 
@@ -23,7 +22,6 @@ li_4.textContent = "";
 li_5.textContent = "";
 li_6.textContent = "";
 li_7.textContent = "";
-li_8.textContent = "";
 
 weatherForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -48,7 +46,6 @@ weatherForm.addEventListener("submit", (e) => {
         li_5.textContent = `Wind Speed:   ${data.current.wind_speed} (m/s)`;
         li_6.textContent = `Visibility:   ${data.current.visibility}%`;
         li_7.textContent = `Pressure:   ${data.current.pressure} (Pa)`;
-        li_8.textContent = `Current Time:   ${data.current.observation_time}`;
       }
     });
   search.value = "";
